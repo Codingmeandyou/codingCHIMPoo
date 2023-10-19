@@ -1,0 +1,82 @@
+body {
+ background-color: #108e80;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+h1.animated {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.categories {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.categories h2 {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.play-button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    background-color: #005bb7;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.image-row {
+    display: flex;
+    justify-content: space-between; /* Adjust this property for your preferred image spacing */
+    align-items: center;
+}
+
+.image-container {
+    width: 500px; /* Set the fixed width for your images */
+    height: 500px; /* Set the fixed height for your images */
+    margin: 0 10px; /* Add margin for spacing between images */
+}
+
+.fixed-size-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+
